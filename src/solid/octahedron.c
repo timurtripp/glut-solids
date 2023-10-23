@@ -48,7 +48,7 @@ void drawOctahedron(const GLfloat scale)
 {
     bindVBO(&octahedronVBO, octahedronDefinition, sizeof(octahedronDefinition));
     // Assigns the vertex array.
-    glVertexPointer(3, GL_FLOAT, 6 * sizeof(GLfloat), (GLvoid *)0);
+    glVertexPointer(3, GL_FLOAT, 6 * sizeof(GLfloat), (GLvoid*)0);
     glEnableClientState(GL_VERTEX_ARRAY);
     // Assigns the normal array.
     glNormalPointer(GL_FLOAT, 6 * sizeof(GLfloat), (GLvoid*)12);

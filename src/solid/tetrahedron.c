@@ -17,7 +17,7 @@ static const GLfloat tetrahedronDefinition[TETRAHEDRON_TRIANGLE_COUNT * TETRAHED
 
     1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f,
     0.0f, -1.0f, -1.0f, 0.0f, -1.0f, 0.0f,
-    -1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f,
+    -1.0f, -1.0f, 1.0f, 0.0f, -1.0f, 0.0f
 };
 
 static GLuint tetrahedronVBO = 0; //  Tetrahedron VBO
@@ -32,7 +32,7 @@ void drawTetrahedron(const GLfloat scale)
 {
     bindVBO(&tetrahedronVBO, tetrahedronDefinition, sizeof(tetrahedronDefinition));
     // Assigns the vertex array.
-    glVertexPointer(3, GL_FLOAT, 6 * sizeof(GLfloat), (GLvoid *)0);
+    glVertexPointer(3, GL_FLOAT, 6 * sizeof(GLfloat), (GLvoid*)0);
     glEnableClientState(GL_VERTEX_ARRAY);
     // Assigns the normal array.
     glNormalPointer(GL_FLOAT, 6 * sizeof(GLfloat), (GLvoid*)12);
